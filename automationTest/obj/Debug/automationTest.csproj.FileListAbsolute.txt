@@ -1,0 +1,13 @@
+D:\Programacao\c#\automationTest\automationTest\bin\Debug\automationTest.exe.config
+D:\Programacao\c#\automationTest\automationTest\bin\Debug\automationTest.exe
+D:\Programacao\c#\automationTest\automationTest\bin\Debug\automationTest.pdb
+D:\Programacao\c#\automationTest\automationTest\bin\Debug\WebDriver.dll
+D:\Programacao\c#\automationTest\automationTest\bin\Debug\WebDriver.Support.dll
+D:\Programacao\c#\automationTest\automationTest\bin\Debug\WebDriver.xml
+D:\Programacao\c#\automationTest\automationTest\bin\Debug\WebDriver.Support.xml
+D:\Programacao\c#\automationTest\automationTest\obj\Debug\automationTest.csprojAssemblyReference.cache
+D:\Programacao\c#\automationTest\automationTest\obj\Debug\automationTest.csproj.CoreCompileInputs.cache
+D:\Programacao\c#\automationTest\automationTest\obj\Debug\automationTest.csproj.CopyComplete
+D:\Programacao\c#\automationTest\automationTest\obj\Debug\automationTest.exe
+D:\Programacao\c#\automationTest\automationTest\obj\Debug\automationTest.pdb
+D:\Programacao\c#\automationTest\automationTest\bin\Debug\SeleniumExtras.PageObjects.dll
