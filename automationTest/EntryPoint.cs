@@ -19,28 +19,21 @@ namespace automationTest
 
             home.AcceptCookies.Click();
 
-            menu.ContactsTab.Click();
+            menu.AboutTab.Click();
 
-            if (actions.GetText(about.FormTitleText).Equals("Fale conosco"))
+            if (actions.GetText(about.FormTitleText).Equals("Sobre Nós"))
             {
-                actions.SetText(about.NameInput, "Tiago André");
+                actions.GetText(about.FirstBoxTitle).Equals("Quem somos?");
 
-                actions.SetText(about.TitleInput, "Message Test");
+                actions.GetText(about.SecondBoxTitle).Equals("A missão?");
 
-                actions.SetText(about.EmailInput, "tiago.eugenio.andre@gmail.com");
+                actions.GetText(about.FirstTextBox).Contains("Uma Nutricionista e um Informático juntos");
 
-                actions.SetText(about.MessageInput, "Message body test");
+                actions.GetText(about.SecondTextBox).Contains("Tornar a nossa vida mais facil");
 
-                actions.Scroll(about.ContactFormBtn);
-
-                about.ContactFormBtn.Click();
+                actions.Scroll(about.NumbersDiv);
 
                 actions.Pause(500);
-
-                if (!actions.GetText(about.FinalMessage).Equals("Obrigado por nos contatar! Entraremos em contato contigo em breve."))
-                {
-                    actions.ErrorTrigger("Error sending message");
-                }
             }
             else
             {

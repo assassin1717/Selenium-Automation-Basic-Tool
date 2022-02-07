@@ -1,27 +1,12 @@
-﻿
-
-using OpenQA.Selenium;
-using SeleniumExtras.PageObjects;
+﻿using OpenQA.Selenium;
 
 namespace automationTest.UIElements
 {
     class Menu
     {
-        public Menu()
-        {
-            PageFactory.InitElements(Driver.driver, this);
-        }
-
-        [FindsBy(How = How.Id, Using = "menu-item-1548")]
-        public IWebElement HomeTab { get; set; }
-
-        [FindsBy(How = How.Id, Using = "menu-item-828")]
-        public IWebElement AboutTab { get; set; }
-
-        [FindsBy(How = How.Id, Using = "menu-item-2045")]
-        public IWebElement ServicesTab { get; set; }
-
-        [FindsBy(How = How.Id, Using = "menu-item-829")]
-        public IWebElement ContactsTab { get; set; }
+        public IWebElement HomeTab { get=> Driver.driver.FindElement(By.CssSelector("#menu-item-727 > a")); }
+        public IWebElement NutreiaTab { get=> Driver.driver.FindElement(By.CssSelector("#menu-item-1842 > a")); }
+        public IWebElement AboutTab { get=> Driver.driver.FindElement(By.CssSelector("#menu-item-726 > a")); }
+        public IWebElement ServicesTab { get=> Driver.driver.FindElement(By.CssSelector("#menu-item-725 > a")); }
     }
 }

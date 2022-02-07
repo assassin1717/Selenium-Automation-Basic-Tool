@@ -1,34 +1,14 @@
 ﻿using OpenQA.Selenium;
-using SeleniumExtras.PageObjects;
 
 namespace automationTest.UIElements
 {
     class AboutPage
     {
-        public AboutPage()
-        {
-            PageFactory.InitElements(Driver.driver, this);
-        }
-
-        [FindsBy(How = How.CssSelector, Using = "div > h3")]
-        public IWebElement FormTitleText { get; set; }
-
-        [FindsBy(How = How.Id, Using = "wpforms-14-field_0")]
-        public IWebElement NameInput { get; set; }
-
-        [FindsBy(How = How.Id, Using = "wpforms-14-field_5")]
-        public IWebElement TitleInput { get; set; }
-
-        [FindsBy(How = How.Id, Using = "wpforms-14-field_4")]
-        public IWebElement EmailInput { get; set; }
-
-        [FindsBy(How = How.Id, Using = "wpforms-14-field_2")]
-        public IWebElement MessageInput { get; set; }
-
-        [FindsBy(How = How.Id, Using = "wpforms-submit-14")]
-        public IWebElement ContactFormBtn { get; set; }
-
-        [FindsBy(How = How.CssSelector, Using = "strong > span")]
-        public IWebElement FinalMessage { get; set; }
+        public IWebElement FormTitleText { get => Driver.driver.FindElement(By.CssSelector("div > h1")); }
+        public IWebElement FirstBoxTitle { get=> Driver.driver.FindElement(By.CssSelector("div.elementor-element.elementor-element-1ee123e2.elementor-widget.elementor-widget-heading > div > h3")); }
+        public IWebElement SecondBoxTitle { get=> Driver.driver.FindElement(By.CssSelector("div.elementor-element.elementor-element-dda7c65.elementor-widget.elementor-widget-heading > div > h3")); }
+        public IWebElement FirstTextBox { get=>Driver.driver.FindElement(By.CssSelector("div.elementor-element.elementor-element-abb4b96.elementor-widget.elementor-widget-text-editor > div > div")); }
+        public IWebElement SecondTextBox { get=>Driver.driver.FindElement(By.CssSelector("div.elementor-element.elementor-element-afa68de.elementor-widget.elementor-widget-text-editor > div > div")); }
+        public IWebElement NumbersDiv { get => Driver.driver.FindElement(By.CssSelector("section.elementor-section.elementor-top-section.elementor-element.elementor-element-131ffd2d.elementor-section-content-middle.elementor-section-boxed.elementor-section-height-default.elementor-section-height-default > div.elementor-background-overlay")); }
     }
 }
